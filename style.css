@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0a0b1f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 80px;
+    /* Ajusta el espacio superior del contenido para evitar que quede oculto detrás del encabezado */
+
+}
+
+.header {
+    position: fixed;
+    /* Fija el encabezado en la parte superior */
+    top: 0;
+    /* Alinea el encabezado al borde superior */
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a0b1f;
+    /* Fondo del encabezado para asegurar contraste con el contenido */
+    z-index: 1000;
+    width: 100%;
+    max-width: 990px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .logo-initials {
+    color: #FC10C4;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.logo .logo-name {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    margin-right: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FC10C4;
+}
+
+/* SECCION YO */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 0;
+    width: 100%;
+    max-width: 900px;
+    /* Ancho máximo del contenido principal */
+    margin-top: 100px;
+    /* Ajusta el margen superior */
+    border-radius: 10px;
+}
+
+.hero-content {
+    max-width: 500px;
+    text-align: left;
+    /* Alineación del texto a la izquierda */
+}
+
+.hero h1 {
+    font-size: 2rem;
+    /* Tamaño de fuente más grande */
+    font-weight: 600;
+    /* Peso de la fuente reducido */
+
+    margin-bottom: 0.5rem;
+    /* Menor espacio inferior */
+    color: #ffffff;
+    /* Color del título */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    /* Tamaño de fuente para subtitulo */
+    font-weight: 700;
+    /* Peso de la fuente reducido */
+    margin-bottom: 2rem;
+    /* Mayor espacio inferior */
+    color: #FC10C4;
+}
+
+.text-about {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    /* Espaciado de línea aumentado */
+    margin-bottom: 2rem;
+    /* Mayor espacio inferior */
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.hero-buttons .btn {
+    color: #fff;
+    background-color: #FC10C4;
+    padding: 12px 24px;
+    /* Padding aumentado */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #D6497D;
+}
+
+.hero-buttons .icon-links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.hero-buttons .icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: transparent;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.hero-buttons .icon-btn:hover {
+
+    color: #FF6584;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* SECCION PROYECTOS*/
+.frase {
+    margin-top: 10px;
+  
+}
+
+/* SECCION TECNOLOGIAS*/
+.tecnology {
+    margin-top: 50px;
+
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.skills i {
+    font-size: 60px;
+    transition: transform 0.3s;
+}
+
+.skills i:hover {
+    transform: scale(1.1);
+
+}
+
+.html5 {
+    color: #E34F26;
+}
+
+.css3 {
+    color: #1572B6;
+}
+
+.js {
+    color: #F7DF1E;
+}
+
+.react {
+    color: #61DAFB;
+}
+
+.bootstrap {
+    color: #7952B3;
+}
+
+.git {
+    color: #F05032;
+}
+
+.php {
+    color: #777BB4;
+}
+
+.wordpress {
+    color: #21759B;
+}
+
+.figma {
+    color: #F24E1E;
+}
+
+.sass {
+    color: #CC6699;
+}
+
+.database {
+    color: #4DB33D;
+}
+
+.nodejs {
+    color: #339933;
+}
+
+/* SECCIÓN CONTACTO */
+.contacto {
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    text-align: center;
+    /* Centrar el texto */
+    color: #fff;
+    /* Color del texto blanco */
+    width: 100%;
+    max-width: 990px;
+}
+
+.contacto h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    /* Ajuste del tamaño de la fuente */
+    font-weight: bold;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Alinear los elementos al inicio */
+    margin-bottom: 1.5rem;
+}
+
+.campo_label {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    color: #fff;
+    /* Color del texto blanco */
+}
+
+.campo_field {
+    border: 2px solid #FC10C4;
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #0a0b1f;
+    /* Fondo oscuro para el campo */
+    color: #fff;
+    /* Color del texto blanco */
+}
+
+.campo_field::placeholder {
+    color: #bbb;
+    /* Color del placeholder */
+}
+
+.campo_field--textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.btn {
+    background-color: #FC10C4;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    font-size: 1rem;
+    /* Ajuste del tamaño de la fuente */
+}
+
+.btn:hover {
+    background-color: #e00bb5;
+}
+
+@media (max-width:900px) {
+
+    body {
+        padding: 40px;
+    }
+}

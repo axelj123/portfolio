@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axel Muñoz - Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <span class="logo-initials">im.</span>
+            <span class="logo-name">AxelMuñoz</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Proyectos</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Sobre mí</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Axel Muñoz</h1>
+                <h2>Ingenieria de Sistemas</h2>
+
+                <p class="text-about">Soy estudiante de Ingeniería de Sistemas con pasión por crear aplicaciones de
+                    software elegantes,
+                    robustas y escalables.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn">Descargar CV</a>
+                    <div class="icon-links">
+                        <a class="icon-btn git" href="https://github.com/Herly80" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                                width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg>
+                        </a>
+                        <a class="icon-btn lk" href="https://www.linkedin.com/in/herlylinarezperez/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+                                width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                                <path d="M8 11l0 5" />
+                                <path d="M8 8l0 .01" />
+                                <path d="M12 16l0 -5" />
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="avatar.jpg" alt="Axel Muñoz">
+            </div>
+        </section>
+        <section class="proyectos">
+            <h3>Proyectos</h3>
+            <p class="frase">No hay mejor <strong>deseo </strong>que <strong> aprender</strong></p>
+        </section>
+    </main>
+    <section class="tecnology">
+        <h3>Habilidades</h3>
+        <div class="skills">
+            <i class="fab fa-html5 html5" title="HTML5"></i>
+            <i class="fab fa-css3-alt css3" title="CSS3"></i>
+            <i class="fab fa-js js" title="JavaScript"></i>
+            <i class="fab fa-react react" title="React"></i>
+            <i class="fab fa-bootstrap bootstrap" title="Bootstrap"></i>
+            <i class="fab fa-git-alt git" title="Git"></i>
+            <i class="fab fa-php php" title="PHP"></i>
+            <i class="fab fa-wordpress wordpress" title="WordPress"></i>
+            <i class="fab fa-figma figma" title="Figma"></i>
+            <i class="fab fa-sass sass" title="Sass"></i>
+            <i class="fas fa-database database" title="Database"></i>
+            <i class="fab fa-node-js nodejs" title="Node.js"></i>
+        </div>
+    </section>
+    <section class="contacto">
+        <h3>Trabajemos juntos!!</h3>
+        <form action="">
+    
+            <div class="campo">
+                <label class="campo_label" for="email">E-mail</label>
+                <input class="campo_field" type="email" name="email" id="email" placeholder="correo@correo.com">
+            </div>
+            <div class="campo">
+                <label class="campo_label" for="mensaje">Mensaje</label>
+                <textarea class="campo_field campo_field--textarea" name="mensaje" id="mensaje" placeholder="Quiero trabajar contigo..."></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+    
+    
+    <footer>
+
+
+    </footer>
+</body>
+<script>
+
+    // Inicializar ScrollReveal
+    ScrollReveal().reveal('.hero-content', {
+        delay: 200,
+        distance: '50px',
+        origin: 'left',
+        duration: 1000,
+        reset: false
+    });
+
+    ScrollReveal().reveal('.hero-image', {
+        delay: 400,
+        distance: '50px',
+        origin: 'top',
+        duration: 1000,
+        reset: false
+    });
+
+    ScrollReveal().reveal('.proyectos', {
+        delay: 600,
+        distance: '50px',
+        origin: 'left',
+        duration: 1000,
+        reset: false
+    });
+
+    ScrollReveal().reveal('.header', {
+        delay: 100,
+        distance: '30px',
+        origin: 'top',
+        duration: 800,
+        reset: false
+    });
+    ScrollReveal().reveal('.tecnology', {
+        delay: 600,
+        distance: '50px',
+        origin: 'left',
+        duration: 1000,
+        reset: false
+    })
+
+</script>
+
+</html>
