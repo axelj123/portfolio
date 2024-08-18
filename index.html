@@ -18,14 +18,19 @@
         <div class="logo">
             <span class="logo-initials">im.</span>
             <span class="logo-name">AxelMuñoz</span>
+            
         </div>
+       
         <nav class="nav-links">
             <a href="#">Inicio</a>
             <a href="#">Proyectos</a>
             <a href="#">Habilidades</a>
-            <a href="#">Sobre mí</a>
             <a href="#">Contacto</a>
+         
         </nav>
+        <label class="abrir-menu">
+            <i class="fas fa-bars"></i>
+        </label>
 
     </header>
     <main>
@@ -156,5 +161,15 @@
     })
 
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.querySelector('.abrir-menu');
+    const navLinks = document.querySelector('.nav-links');
 
+    menuButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
+
+</script>
 </html>

@@ -39,6 +39,8 @@ body {
 
 .logo {
     display: flex;
+    padding: 10px 10px;
+
     align-items: center;
 }
 
@@ -57,7 +59,6 @@ body {
 .nav-links {
     display: flex;
     gap: 1rem;
-    margin-right: 40px;
 }
 
 .nav-links a {
@@ -178,7 +179,7 @@ body {
 /* SECCION PROYECTOS*/
 .frase {
     margin-top: 10px;
-  
+
 }
 
 /* SECCION TECNOLOGIAS*/
@@ -334,9 +335,33 @@ body {
     background-color: #e00bb5;
 }
 
-@media (max-width:500px) {
 
-    body {
-        padding: 40px;
+@media (max-width:926px) {
+
+    .hero {
+        padding: 1rem 1rem;
     }
+
+
+}
+
+/* Show menu on larger screens */
+@media (max-width: 754px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+/* Show menu on smaller screens when active */
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #0a0b1f;
+    padding: 1rem 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
 }
