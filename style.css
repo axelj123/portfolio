@@ -19,7 +19,9 @@ body {
     /* Ajusta el espacio superior del contenido para evitar que quede oculto detrás del encabezado */
 
 }
-
+:root{
+    --primarycolor: #ff9900
+}
 .header {
     position: fixed;
     /* Fija el encabezado en la parte superior */
@@ -44,7 +46,7 @@ body {
 }
 
 .logo .logo-initials {
-    color: #FC10C4;
+    color: var(--primarycolor);
     font-weight: 700;
     margin-right: 5px;
 }
@@ -71,7 +73,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #FC10C4;
+    color: var(--primarycolor);
 }
 
 /* SECCION YO */
@@ -110,7 +112,7 @@ body {
     /* Peso de la fuente reducido */
     margin-bottom: 2rem;
     /* Mayor espacio inferior */
-    color: #FC10C4;
+    color: var(--primarycolor);
 }
 
 .text-about {
@@ -129,7 +131,6 @@ body {
 
 .hero-buttons .btn {
     color: #fff;
-    background-color: #FC10C4;
     padding: 12px 24px;
     /* Padding aumentado */
     border-radius: 5px;
@@ -290,7 +291,8 @@ body {
 }
 
 .campo_field {
-    border: 2px solid #FC10C4;
+    border: 2px solid var(--primarycolor);
+    ;
     padding: 0.75rem;
     border-radius: 5px;
     font-size: 1rem;
@@ -312,7 +314,8 @@ body {
 }
 
 .btn {
-    background-color: #FC10C4;
+    background-color:   var(--primarycolor);
+    
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -330,21 +333,8 @@ body {
 .btn:hover {
     background-color: #e00bb5;
 }
-
-@media (max-width:926px) {
-
-    .hero {
-        padding: 1rem 1rem;
-    }
-
-
-}
-
-/* Show menu on larger screens */
-@media (max-width: 754px) {
-    .nav-links {
-        display: none;
-    }
+.abrir-menu{
+    display: none;
 }
 
 /* Show menu on smaller screens when active */
@@ -360,3 +350,23 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     
 }
+@media (max-width:926px) {
+
+    .hero {
+        padding: 1rem 1rem;
+    }
+
+
+}
+
+/* Show menu on larger screens */
+@media (max-width: 754px) {
+    .nav-links {
+        display: none;
+    }
+    .abrir-menu{
+        display: block;
+    }
+}
+
+
