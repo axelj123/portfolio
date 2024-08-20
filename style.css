@@ -20,7 +20,9 @@ body {
 
 }
 :root{
-    --primarycolor: #ff9900
+    --primarycolor: #ff9900;
+    --primarycolor-hover: #e68a00; /* Un tono más oscuro */
+
 }
 .header {
     position: fixed;
@@ -139,7 +141,7 @@ body {
 }
 
 .hero-buttons .btn:hover {
-    background-color: #D6497D;
+    background-color: var(--primarycolor-hover);
 }
 
 .hero-buttons .icon-links {
@@ -159,7 +161,7 @@ body {
 
 .hero-buttons .icon-btn:hover {
 
-    color: #FF6584;
+    color:var(--primarycolor-hover);
 }
 
 .hero-image {
@@ -331,7 +333,8 @@ body {
 }
 
 .btn:hover {
-    background-color: #e00bb5;
+    background-color: var(--primarycolor-hover);
+
 }
 .abrir-menu{
     display: none;
@@ -352,7 +355,7 @@ body {
 }
 @media (max-width:926px) {
 
-    .hero {
+    body {
         padding: 1rem 1rem;
     }
 
